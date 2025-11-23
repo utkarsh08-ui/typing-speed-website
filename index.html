@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Typing Speed Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body><header>
+
+<!-- START SCREEN -->
+<div id="startScreen" class="overlay show">
+  <h1>⚡ Typing Speed Challenge</h1>
+  <button id="startBtn">Start Game</button>
+</div>
+
+<!-- GAME OVER SCREEN -->
+<div id="gameOverScreen" class="overlay">
+  <h2>⏳ Time Over!</h2>
+  <p>Your Score: <span id="finalScore"></span></p>
+  <p>Your WPM: <span id="finalWpm"></span></p>
+  <button id="restartBtn">Play Again</button>
+</div>
+
+<!-- MAIN GAME -->
+<div class="game-container hide">
+
+  <h1>⚡ Typing Speed Challenge</h1>
+
+  <div class="info">
+    <p>⏱ Time: <span id="time">20</span></p>
+    <p>🏆 Score: <span id="score">0</span></p>
+    <p>🚀 WPM: <span id="wpm">0</span></p>
+  </div>
+
+  <h2 id="word"></h2>
+
+  <input id="text" type="text" placeholder="Type the word..." autofocus>
+
+  <div class="selectors">
+    <select id="difficulty">
+      <option value="easy">Easy</option>
+      <option value="medium" selected>Medium</option>
+      <option value="hard">Hard</option>
+    </select>
+
+    <select id="wordPack">
+      <option value="all">All Packs</option>
+      <option value="general">General</option>
+      <option value="cricket">Cricket 🏏</option>
+      <option value="food">Food 🍔</option>
+      <option value="gaming">Gaming 🎮</option>
+      <option value="anime">Anime 🎬</option>
+      <option value="hard">Hard English 🧠</option>
+    </select>
+  </div>
+
+  <button id="musicBtn">🎵 Music</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
